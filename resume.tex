@@ -1,0 +1,246 @@
+%-------------------------
+% Resume in Latex
+% Author : Vedant Gaikwad
+% Based off of: https://github.com/ghOst-vedant/resume
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\RequirePackage{tikz}
+\RequirePackage{xcolor}
+\RequirePackage{fontawesome}
+\usetikzlibrary{svg.path}
+
+\definecolor{cvblue}{HTML}{0E5484}
+\definecolor{black}{HTML}{130810}
+\definecolor{darkcolor}{HTML}{0F4539}
+\definecolor{cvgreen}{HTML}{3BD80D}
+\definecolor{taggreen}{HTML}{00E278}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{name}{black}
+\colorlet{tagline}{darkcolor}
+\colorlet{heading}{darkcolor}
+\colorlet{headingrule}{cvblue}
+\colorlet{accent}{darkcolor}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\large#1} & \textbf{\small #2} \\
+      \textit{\large#3} & \textit{\small #4} \\
+      
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\newcommand\sbullet[1][.5]{\mathbin{\vcenter{\hbox{\scalebox{#1}{$\bullet$}}}}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+\begin{center}
+    {\Huge \scshape Vedant Himmatrao Gaikwad} \\ \vspace{1pt}
+    Koperkhairane, Navi Mumbai  \\ \vspace{1pt}
+    \small \href{tel:+919773336311}{\raisebox{-0.1\height}\faPhone\ \underline{+91-9773336311}} ~ 
+    \href{mailto:gaikwadvedant30@gmail.com}{\raisebox{-0.2\height}\faEnvelope\ \underline{gaikwadvedant30@gmail.com}} ~ 
+    \href{http://www.linkedin.com/in/vedant-gaikwad-b2516b226}{\raisebox{-0.2\height}\faLinkedinSquare\ \underline{Linkedin}}  ~
+    \href{https://github.com/ghOst-vedant}{\raisebox{-0.2\height}\faGithub\ \underline{Github}} ~
+    \href{https://leetcode.com/u/ghOst-vedant/}{\raisebox{-0.2\height}{\includegraphics[height=0.3cm, width=0.3cm]{leetcode.png}}\ \underline{LeetCode}} ~
+\end{center}
+\vspace{0.5mm}
+
+%-----------EDUCATION-----------
+\vspace{6pt}
+\section{EDUCATION}
+  \resumeSubheading
+    {Fr. C. Rodrigues Institute of Technology}{2021 – 2025}
+    {B.Tech - Computer Engineering - \textbf{CGPA} - \textbf{8.5}}{Navi Mumbai, Maharashtra}
+\vspace{6pt}
+\vspace{6pt}
+%------RELEVANT COURSEWORK-------
+\section{SKILLS}
+    \begin{multicols}{6}
+        \begin{itemize}[itemsep=-2pt, parsep=5pt]
+            \item Python
+            \item C++
+            \item HTML
+            \item CSS
+            \item JavaScript
+            \item ReactJs
+            \item TailwindCSS
+            \item Node.Js
+            \item Express.Js
+            \item MongoDB
+            \item TypeScript
+        \end{itemize}
+    \end{multicols}
+    \vspace*{2.0\multicolsep}
+
+\vspace{6pt}
+%-----------PROJECTS-----------
+\vspace{6pt}
+\vspace{6pt}
+\section{PROJECTS}
+    \resumeSubHeadingListStart
+    \resumeProjectHeading
+        {\href{https://github.com/ghOst-vedant/WonderNot}{\textbf{\large{\underline{WonderNot}}} \href{Project Link}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{Material-UI, React, Redux, Express, Node, MongoDB}}}{2023}
+        \vspace{-6pt}
+        \resumeItemListStart
+            \resumeItem{\normalsize{A Social Community Platform where users can interact with each other.}}
+            \resumeItem{\normalsize{Home page shows the users' information and the feed with user-uploaded posts.}}
+            \resumeItem{\normalsize{Chat rooms where the users can communicate with each other.}}
+            \resumeItem{\normalsize{Appointment requesting where user can contact the fellow peers or experienced people for any guidance or clarity.}}
+        \resumeItemListEnd
+    \resumeProjectHeading
+        {\href{https://github.com/ghOst-vedant/Book-store-Backend}{\textbf{\large{\underline{Book Store Backend}}} \href{Project Link}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{Nodejs, Expressjs, Postman, Database - MongoDB}}}{2024}
+        \vspace{-6pt}
+        \resumeItemListStart
+            \resumeItem{\normalsize{A backend built in using express, which allows users to communicate to the database for storage of files such as pdf to cloudinary.}}
+            \resumeItem{\normalsize{Apis which can be used to perform CRUD operations on MongoDB to create, fetch, delete and manipulate data.}}
+            \resumeItem{\normalsize{Tested using Postman.}}
+        \resumeItemListEnd
+    % \resumeProjectHeading
+    %     {\href{https://github.com/ghOst-vedant/Gossipy}{\textbf{\large{\underline{Gossipy}}} \href{Project Link}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{Material-UI, React, Redux, Express, Node, Database - MongoDB (MERN App)}}}{2024}
+    %     \vspace{-6pt}
+    %     \resumeItemListStart
+    %         \resumeItem{\normalsize{A Social Community Platform where users can interact with each other.}}
+    %         \resumeItem{\normalsize{Home page shows the users' information and the feed with user-uploaded posts.}}
+    %         \resumeItem{\normalsize{Chat rooms where the users can communicate with each other.}}
+    %     \resumeItemListEnd
+    % \resumeSubHeadingListEnd
+\vspace{6pt}
+
+\section{GROUP PROJECT}
+    \resumeSubHeadingListStart
+    \resumeProjectHeading
+        {\href{https://myfabrilia.com}{\textbf{\large{\underline{Fabrilia}}} \href{Project Link}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{React, TailwindCSS, Redux, Firebase}}}{2024}
+        \vspace{0pt}
+        \resumeItemListStart
+            \resumeItem{\normalsize{An Ecommerce Project for curtains supplies.}}
+            \resumeItem{\normalsize{Responsibilities: Created Frontend to dynamically use updated data.}}
+            \resumeItem{\normalsize{Tech: React, TailwindCSS.}}
+        \resumeItemListEnd
+%-----------EXPERIENCE-----------
+% \section{EXPERIENCE}
+%   \resumeSubHeadingListStart
+%     \resumeSubheading
+%       {Software Engineer Intern}{March 2022 -- June 2022}
+%       {Startup 404 Solutions}{Navi Mumbai, Maharashtra}
+%       \resumeItemListStart
+%         \resumeItem{\normalsize{Developed and managed full stack solutions for several projects.}}
+%         \resumeItem{\normalsize{Enhanced performance of existing modules by 20\% by implementing optimized algorithms and improving database queries.}}
+%       \resumeItemListEnd
+%   \resumeSubHeadingListEnd
+\vspace{6pt}
+\vspace{6pt}
+
+%-----------TOOLS-----------
+\section{ACHIEVEMENTS}
+  \resumeSubHeadingListStart
+    \resumeItem{\normalsize{Completed \textbf{Hacktoberfest 2023 organised by Digital Ocean}, merged more than 4 pull requests }}
+  \resumeSubHeadingListEnd
+\vspace{6pt}
+
+%-----------CERTIFICATIONS-----------
+% \section{CERTIFICATIONS}
+%   \resumeSubHeadingListStart
+%     \resumeItem{\normalsize{Coursera: Google Data Analytics Professional Certificate}}
+%     \resumeItem{\normalsize{Udemy: The Complete 2022 Web Development Bootcamp}}
+%   \resumeSubHeadingListEnd
+\vspace{6pt}
+
+\end{document}
